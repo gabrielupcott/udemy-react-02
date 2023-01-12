@@ -8,7 +8,7 @@ const Modal = (props) => {
   };
 
   return (
-    <div className={styles.backdrop}>
+    <div className={styles.backdrop} onClick={onCloseModalHandler}>
       <div className={styles.modal}>
         <div className={styles.header}>
           <h2>Invalid input</h2>
