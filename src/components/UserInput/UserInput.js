@@ -48,7 +48,7 @@ const UserInput = (props) => {
   };
 
   return (
-    <form>
+    <form onSubmit={formSubmitHandler}>
       <div className={styles.input}>
         <label htmlFor="username">Username</label>
         <input
@@ -66,7 +66,7 @@ const UserInput = (props) => {
           onChange={ageInputChangeHandler}
           value={enteredAge}
         />
-        <Button type="submit" onClick={formSubmitHandler}>
+        <Button type="submit">
           Submit
         </Button>
       </div>
