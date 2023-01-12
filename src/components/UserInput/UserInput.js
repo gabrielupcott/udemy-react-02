@@ -61,7 +61,7 @@ const UserInput = (props) => {
         <label htmlFor="age">Age (Years)</label>
         <input
           id="age"
-          type="text"
+          type="number"
           className={`${!ageIsValid && styles.invalid}`}
           onChange={ageInputChangeHandler}
           value={enteredAge}
