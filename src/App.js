@@ -44,6 +44,10 @@ function App() {
     });
   };
 
+  // TODO (maybe):
+  // could have moved the section divs to inside of their respective components
+  // and make them into a 'Card.js' component
+  // this means also moving the modal logic into the UserInput.js component
   return (
     <div>
       <div className={styles.section}>
