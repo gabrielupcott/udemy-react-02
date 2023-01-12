@@ -50,15 +50,17 @@ const UserInput = (props) => {
   return (
     <form>
       <div className={styles.input}>
-        <label>Username</label>
+        <label htmlFor="username">Username</label>
         <input
+          id="username"
           type="text"
           className={`${!nameIsValid && styles.invalid}`}
           onChange={nameInputChangeHandler}
           value={enteredName}
         />
-        <label>Age (Years)</label>
+        <label htmlFor="age">Age (Years)</label>
         <input
+          id="age"
           type="text"
           className={`${!ageIsValid && styles.invalid}`}
           onChange={ageInputChangeHandler}
